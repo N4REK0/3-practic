@@ -452,7 +452,7 @@ namespace ConsoleApp1
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 61. Пользователь вводит текущий час (0–23). Вывести: «Ночь» (0-5), «Утро» (6-11), «День» (12-17), «Вечер» (18-23).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -470,13 +470,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+            Console.Write("Введите текущий час (0-23): ");
+            int hour = int.Parse(Console.ReadLine());
+
+            if (hour >= 0 && hour <= 5)
+            {
+                Console.WriteLine("Ночь");
+            }
+
+            else if (hour >= 6 && hour <= 11)
+            {
+                Console.WriteLine("Утро");
+            }
+
+            else if (hour >= 12 && hour <= 17)
+            {
+                Console.WriteLine("День");
+            }
+
+            else if (hour >= 18 && hour <= 23)
+            {
+                Console.WriteLine("Вечер");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 62. Ввести толщину льда на водоеме (см). Вывести: «Выход запрещен» ( < 7 ), «Одиночный пешеход» (7-12), «Группа людей» (13-20), «Транспорт» ( > 20 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -494,13 +515,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+            Console.Write("Введите толщину льда на водоеме (см): ");
+            int ice = int.Parse(Console.ReadLine());
+
+            if (ice < 7)
+            {
+                Console.WriteLine("Вход запрещен");
+            }
+
+            else if (ice >= 7 && ice <=12)
+            {
+                Console.WriteLine("Одиночный пешеход");
+            }
+
+            else if (ice >= 13 && ice <= 20)
+            {
+                Console.WriteLine("Группа людей");
+            }
+
+            else if (ice > 20)
+            {
+                Console.WriteLine("транспорт");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 63. Даны три целых числа A , B , C . Найти максимальное из них, используя каскадное условие.
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -518,13 +560,35 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+            Console.Write("Введите первое целое число: ");
+            int A = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите второе целое число: ");
+            int B = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите третье целое число: ");
+            int C = int.Parse(Console.ReadLine());
+
+            if (A >= B && A >= C)
+            {
+                Console.WriteLine($"max: {A}");
+            }
+
+            else if (B >= A && B >= C)
+            {
+                Console.WriteLine($"max: {B}");
+            }
+
+            else
+            {
+                Console.WriteLine($"max: {C}");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 64. Даны три числа. Найти минимальное из них.
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -542,13 +606,35 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите первое целое число: ");
+            int X = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите второе целое число: ");
+            int Y = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите третье целое число: ");
+            int Z = int.Parse(Console.ReadLine());
+
+            if (X <= Y && X < Z)
+            {
+                Console.WriteLine($"min: {X}");
+            }
+
+            else if (Y <= X && Y <= Z)
+            {
+                Console.WriteLine($"min: {Y}");
+            }
+
+            else
+            {
+                Console.WriteLine($"min: {Z}");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 65. Даны три числа. Определить, сколько из них положительных (0, 1, 2 или 3).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -566,13 +652,39 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+            Console.Write("Введите первое целое число: ");
+            int A = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите второе целое число: ");
+            int B = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите третье целое число: ");
+            int C = int.Parse(Console.ReadLine());
+
+            int score = 0;
+
+            if (A > 0)
+            {
+                score++;
+            }
+
+            if (B > 0)
+            {
+                score++;
+            }
+
+            if (C > 0)
+            {
+                score++;
+            }
+
+            Console.WriteLine($"Количество положительных чисел: {score}");
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 66. Ввести средний балл диплома. Вывести: «Без отличия» ( < 4.5 ), «Претендент на красный диплом» (4.5-4.74), «Красный диплом» ( ≥ 4.75 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -590,13 +702,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите средный балл диплома: ");
+            decimal ball = decimal.Parse(Console.ReadLine());
+
+            if (ball < 4.5m)
+            {
+                Console.WriteLine("Без отличия");
+            }
+
+            else if (ball >= 4.5m && ball <= 4.74m)
+            {
+                Console.WriteLine("Претендент на красный диплом");
+            }
+
+            else if (ball >= 4.75m)
+            {
+                Console.WriteLine("Красный диплом");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 67. Ввести значение артериального давления (систолическое). Вывести: гипотония ( < 90 ), норма (90-120), предгипертензия (121-139), гипертензия ( ≥ 140 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -614,13 +742,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите значение артериального давления: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if (number < 90)
+            {
+                Console.WriteLine("Гипотония");
+            }
+
+            else if (number >= 90 && number <= 120)
+            {
+                Console.WriteLine("Норма");
+            }
+
+            else if (number >= 121 && number <= 139)
+            {
+                Console.WriteLine("Предгипертензия");
+            }
+
+            else if (number >= 140)
+            {
+                Console.WriteLine("Гипертензия");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 68. Ввести рейтинг шахматиста (Эло). Вывести ранг: любитель ( < 1400 ), разрядник (1400-1999), мастер (2000-2399), гроссмейстер ( ≥ 2400 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -638,7 +787,28 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите значение артериального давления: ");
+            int elo = int.Parse(Console.ReadLine());
+
+            if (elo < 1400)
+            {
+                Console.WriteLine("Любитель");
+            }
+
+            else if (elo >= 1400 && elo <= 1999)
+            {
+                Console.WriteLine("Разрядник");
+            }
+
+            else if (elo >= 2000 && elo <= 2399)
+            {
+                Console.WriteLine("Мастер");
+            }
+
+            else if (elo >= 2400)
+            {
+                Console.WriteLine("Гроссмейстер");
+            }
         }
     }
 }
