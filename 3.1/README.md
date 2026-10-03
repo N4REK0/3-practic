@@ -31,7 +31,7 @@ namespace ConsoleApp1
 ---
 № 2. Пользователь вводит целое число. Проверить, является ли оно четным.
 
-<picture> <img src="3.1. Арифметические операторы/2 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/2.png"> 
 </picture>
 
 ```csharp
