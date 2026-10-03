@@ -944,7 +944,7 @@ namespace ConsoleApp1
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 72. Ввести процент выполнения плана продаж. Вывести статус: план сорван ( < 70 ), удовлетворительно (70-99%), выполнен (100-119%), перевыполнен ( ≥ 120 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -962,13 +962,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите процент выполнения плана продаж: ");
+            int plan = int.Parse(Console.ReadLine());
+
+            if (plan < 70)
+            {
+                Console.WriteLine("План сорван");
+            }
+
+            else if (plan >= 70 && plan <= 99)
+            {
+                Console.WriteLine("Удовлетворительно");
+            }
+
+            else if (plan >= 100 && plan <= 119)
+            {
+                Console.WriteLine("Выполнен");
+            }
+
+            else if (plan >= 120)
+            {
+                Console.WriteLine("Перевыполнен");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 73. Даны три числа. Упорядочить их по возрастанию и вывести на консоль.
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -986,13 +1007,43 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите первое число: ");
+            int A = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите второе число: ");
+            int B = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите третье число: ");
+            int C = int.Parse(Console.ReadLine());
+
+            if (A > B)
+            {
+                int temp = A;
+                A = B;
+                B = temp;
+            }
+
+            if (A > C)
+            {
+                int temp = A;
+                A = C;
+                C = temp;
+            }
+
+            if (B > C)
+            {
+                int temp = B;
+                B = C;
+                C = temp;
+            }
+
+            Console.WriteLine($"{A} {B} {C}");
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 74. 
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
