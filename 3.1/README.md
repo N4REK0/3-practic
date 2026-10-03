@@ -5,7 +5,7 @@
 ---
 № 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
 
-<picture> <img src="скрины 3.1/1.png.jpg"> 
+<picture> <img src="скрины 3.1/1.png"> 
 </picture>
 
 ```csharp
@@ -62,7 +62,7 @@ namespace ConsoleApp1
 ---
 № 3.Даны два целых числа. Вывести наибольшее из них.
 
-<picture> <img src="3.1. Арифметические операторы/3 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/3.png"> 
 </picture>
 
 ```csharp
@@ -101,7 +101,7 @@ namespace ConsoleApp1
 ----
 № 4. Даны два числа с плавающей точкой. Вывести наименьшее.
 
-<picture> <img src="3.1. Арифметические операторы/4 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/4.png"> 
 </picture>
 
 ```csharp
@@ -140,7 +140,7 @@ namespace ConsoleApp1
 ---
 № 5. Проверить, делится ли введенное число нацело на 5.
 
-<picture> <img src="3.1. Арифметические операторы/5 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/5.png"> 
 </picture>
 
 ```csharp
@@ -176,7 +176,7 @@ namespace ConsoleApp1
 ---
 №6. Проверить, оканчивается ли введенное целое число нулем.
 
-<picture> <img src="3.1. Арифметические операторы/6 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/6.png"> 
 </picture>
 
 ```csharp
@@ -213,7 +213,7 @@ namespace ConsoleApp1
 ---
 №7. Пользователь вводит температуру воздуха. Если она ниже нуля, вывести: «На улице мороз, наденьте шапку».
 
-<picture> <img src="3.1. Арифметические операторы/7 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/7.png"> 
 </picture>
 
 ```csharp
@@ -249,7 +249,7 @@ namespace ConsoleApp1
 ---
 №8. Дано число. Если оно больше 100, уменьшить его на 20, иначе увеличить на 10.
 
-<picture> <img src="3.1. Арифметические операторы/8 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/8.png"> 
 </picture>
 
 ```csharp
@@ -285,7 +285,7 @@ namespace ConsoleApp1
 ---
 № 9. Ввести два числа. Если они равны, вывести «Числа равны», иначе вывести их произведение.
 
-<picture> <img src="3.1. Арифметические операторы/9 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/9.png"> 
 </picture>
 
 ```csharp
@@ -324,7 +324,7 @@ namespace ConsoleApp1
 ---
 № 10. Пользователь вводит свой возраст. Если возраст от 18 и старше, вывести «Доступ разрешен», иначе «Доступ запрещен».
 
-<picture> <img src="3.1. Арифметические операторы/10 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/10.png"> 
 </picture>
 
 ```csharp
@@ -359,7 +359,7 @@ namespace ConsoleApp1
 ---
 № 11. Ввести число. Если оно трехзначное, вывести «Да», иначе «Нет».
 
-<picture> <img src="3.2. Операторы сравнения и равенства/1.jpg"> 
+<picture> <img src="скрины 3.1/11.png"> 
 </picture>
 
 ```csharp
@@ -395,7 +395,7 @@ namespace ConsoleApp1
 ---
 № 12. Проверить, делится ли число на 3 без остатка.
 
-<picture> <img src="3.2. Операторы сравнения и равенства/2.jpg"> 
+<picture> <img src="скрины 3.1/12.png"> 
 </picture>
 
 ```csharp
@@ -431,7 +431,7 @@ namespace ConsoleApp1
 ---
 № 13. Даны координаты точки на числовой прямой X. Определить, лежит ли точка правее нуля.
 
-<picture> <img src="3.2. Операторы сравнения и равенства/3.jpg"> 
+<picture> <img src="скрины 3.1/13.png"> 
 </picture>
 
 ```csharp
@@ -466,7 +466,7 @@ namespace ConsoleApp1
 ---
 № 14. Ввести баланс счета. Если баланс отрицательный, вывести «Задолженность!».
 
-<picture> <img src="3.2. Операторы сравнения и равенства/4.jpg"> 
+<picture> <img src="скрины 3.1/14.png"> 
 </picture>
 
 ```csharp
@@ -502,7 +502,7 @@ namespace ConsoleApp1
 ---
 № 15. Пользователь вводит пароль (целое число). Если введен 1234, вывести «Вход выполнен», иначе «Неверный пароль».
 
-<picture> <img src="3.2. Операторы сравнения и равенства/5.jpg"> 
+<picture> <img src="скрины 3.1/15.png"> 
 </picture>
 
 ```csharp
@@ -538,7 +538,7 @@ namespace ConsoleApp1
 ---
 № 16. Проверить, является ли введенное число отрицательным.
 
-<picture> <img src="3.2. Операторы сравнения и равенства/6.jpg"> 
+<picture> <img src="скрины 3.1/16.png"> 
 </picture>
 
 ```csharp
@@ -574,7 +574,7 @@ namespace ConsoleApp1
 ---
 № 17. Даны два числа. Вывести разность большего и меньшего числа.
 
-<picture> <img src="3.2. Операторы сравнения и равенства/7.jpg"> 
+<picture> <img src="скрины 3.1/17.png"> 
 </picture>
 
 ```csharp
@@ -607,7 +607,7 @@ namespace ConsoleApp1
 ---
 №18. Ввести сумму покупки. Если сумма превышает 1000 рублей, предоставить скидку 5% и вывести итоговую цену.
 
-<picture> <img src="3.2. Операторы сравнения и равенства/8.jpg"> 
+<picture> <img src="скрины 3.1/18.png"> 
 </picture>
 
 ```csharp
@@ -645,7 +645,7 @@ namespace ConsoleApp1
 ---
 № 19. Ввести число. Если оно четное, разделить его на 2, если нечетное — умножить на 3.
 
-<picture> <img src="3.2. Операторы сравнения и равенства/9.jpg"> 
+<picture> <img src="скрины 3.1/19.png"> 
 </picture>
 
 ```csharp
@@ -683,7 +683,7 @@ namespace ConsoleApp1
 ---
 №20. Пользователь вводит скорость движения. Если скорость выше 90 км/ч, вывести сообщение о нарушении.
 
-<picture> <img src="3.2. Операторы сравнения и равенства/10.jpg"> 
+<picture> <img src="скрины 3.1/20.png"> 
 </picture>
 
 ```csharp
@@ -720,7 +720,7 @@ namespace ConsoleApp1
 -
 № 21. Дано целое число. Проверить, равно ли оно нулю.
 
-<picture> <img src="3.3 Логические операторы/1 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/21.png"> 
 </picture>
 
 ```csharp
@@ -756,7 +756,7 @@ namespace ConsoleApp1
 ---
 № 22. Ввести два вещественных числа. Проверить, равны ли они с точностью до 0.001.
 
-<picture> <img src=""> 
+<picture> <img src="скрины 3.1/22.png"> 
 </picture>
 
 ```csharp
@@ -794,7 +794,7 @@ namespace ConsoleApp1
 ---
 № 23. Проверить, делится ли число A на число B без остатка.
 
-<picture> <img src=""> 
+<picture> <img src="скрины 3.1/23.png"> 
 </picture>
 
 ```csharp
@@ -833,7 +833,7 @@ namespace ConsoleApp1
 ---
 № 24. Даны два угла треугольника в градусах. Проверить, существует ли такой треугольник (сумма меньше 180).
 
-<picture> <img src="3.3 Логические операторы/4 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/24.png"> 
 </picture>
 
 ```csharp
@@ -872,7 +872,7 @@ namespace ConsoleApp1
 ---
 № 25. Ввести радиус круга и сторону квадрата. Определить, у какой фигуры площадь больше.
 
-<picture> <img src="3.3 Логические операторы/5 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/25.png"> 
 </picture>
 
 ```csharp
@@ -915,7 +915,7 @@ namespace ConsoleApp1
 ---
 № 26. Ввести два числа. Вывести частное большего на меньшее (предусмотреть проверку деления на 0).
 
-<picture> <img src="3.3 Логические операторы/6 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/26.png"> 
 </picture>
 
 ```csharp
@@ -964,7 +964,7 @@ namespace ConsoleApp1
 ---
 № 27. Проверить, является ли последняя цифра числа семеркой.
 
-<picture> <img src="3.3 Логические операторы/7 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/27.png"> 
 </picture>
 
 ```csharp
@@ -985,7 +985,7 @@ namespace ConsoleApp1
 
             if (number % 10 == 7)
             {
-                Console.Write($"Последняя цифра чила {number} равна 7");
+                Console.Write($"Последняя цифра чиcла {number} равна 7");
             }
         }
     }
@@ -995,7 +995,7 @@ namespace ConsoleApp1
 ---
 № 28. Дано число. Если оно нечетное и положительное, вывести «Да».
 
-<picture> <img src="3.3 Логические операторы/8 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/28.png"> 
 </picture>
 
 ```csharp
@@ -1032,7 +1032,7 @@ namespace ConsoleApp1
 ---
 № 29. Ввести объем свободного места на диске (в ГБ). Если места меньше 5 ГБ, вывести предупреждение.
 
-<picture> <img src="3.3 Логические операторы/9 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/29.png"> 
 </picture>
 
 ```csharp
@@ -1068,7 +1068,7 @@ namespace ConsoleApp1
 ---
 № 30. Пользователь вводит оценку (2, 3, 4, 5). Если оценка 4 или 5, вывести «Молодец», иначе «Нужно подтянуться».
 
-<picture> <img src="3.3 Логические операторы/10 задача.png.jpg"> 
+<picture> <img src="скрины 3.1/30.png"> 
 </picture>
 
 ```csharp
@@ -1109,7 +1109,7 @@ namespace ConsoleApp1
 
 № 31. Даны два символа. Проверить, совпадают ли они.
 
-<picture> <img src="3.4/1 задача.png"> 
+<picture> <img src="скрины 3.1/31.png"> 
 </picture>
 
 ```csharp
@@ -1148,7 +1148,7 @@ namespace ConsoleApp1
 ---
 № 32. Ввести число. Если оно кратно и 2, и 7, вывести «Кратно 14».
 
-<picture> <img src="3.4/2 задача.png"> 
+<picture> <img src="скрины 3.1/32.png"> 
 </picture>
 
 ```csharp
@@ -1178,7 +1178,7 @@ namespace ConsoleApp1
 ---
 № 33. Ввести массу груза. Если масса превышает допустимые 3.5 тонны, вывести «Перегруз!».
 
-<picture> <img src="3.4/3 задача.png"> 
+<picture> <img src="скрины 3.1/33.png"> 
 </picture>
 
 ```csharp
@@ -1213,7 +1213,7 @@ namespace ConsoleApp1
 ---
 № 34. Ввести текущее время (часы от 0 до 23). Если время от 6 до 12, вывести «Доброе утро».
 
-<picture> <img src="3.4/4 задача.png"> 
+<picture> <img src="скрины 3.1/34.png"> 
 </picture>
 
 ```csharp
@@ -1258,7 +1258,7 @@ namespace ConsoleApp1
 ---
 № 35. Ввести рост человека в см. Если рост больше 200 см, вывести «Очень высокий».
 
-<picture> <img src="3.4/5 задача.png"> 
+<picture> <img src="скрины 3.1/35.png"> 
 </picture>
 
 ```csharp
@@ -1293,7 +1293,7 @@ namespace ConsoleApp1
 ---
 № 36. Дано двузначное число. Определить, какая из его цифр больше.
 
-<picture> <img src="3.4/6 задача.png"> 
+<picture> <img src="скрины 3.1/36.png"> 
 </picture>
 
 ```csharp
@@ -1336,7 +1336,7 @@ namespace ConsoleApp1
 ---
 № 37. Ввести стоимость товара. Если товар бесплатный (цена 0), вывести «Акция!».
 
-<picture> <img src="3.4/7 задача.png"> 
+<picture> <img src="скрины 3.1/37.png"> 
 </picture>
 
 ```csharp
@@ -1366,7 +1366,7 @@ namespace ConsoleApp1
 ---
 № 38. Проверить, содержит ли введенное двузначное число одинаковые цифры.
 
-<picture> <img src="3.4/8 задача.png"> 
+<picture> <img src="скрины 3.1/38.png"> 
 </picture>
 
 ```csharp
@@ -1404,7 +1404,7 @@ namespace ConsoleApp1
 ---
 № 39. Ввести уровень громкости (0–100). Если громкость превышает 80, вывести «Слишком громко для слуха».
 
-<picture> <img src="3.4/9 задача.png"> 
+<picture> <img src="скрины 3.1/39.png"> 
 </picture>
 
 ```csharp
@@ -1439,7 +1439,7 @@ namespace ConsoleApp1
 ---
 № 40. Даны два числа. Если их сумма четная, вывести сумму, иначе вывести их разность.
 
-<picture> <img src="3.4/10 задача.png"> 
+<picture> <img src="скрины 3.1/40.png"> 
 </picture>
 
 ```csharp
@@ -1480,7 +1480,7 @@ namespace ConsoleApp1
 ---
 № 41. Ввести количество страниц в документе. Если страниц больше 100, включить двухстороннюю печать.
 
-<picture> <img src="3.5/1.png"> 
+<picture> <img src="скрины 3.1/41.png"> 
 </picture>
 
 ```csharp
@@ -1511,7 +1511,7 @@ namespace ConsoleApp1
 ---
 №   42. Проверить, является ли введенное целое число полным квадратом (для проверки использовать Math.Sqrt).
 
-<picture> <img src="3.5/2.png"> 
+<picture> <img src="скрины 3.1/42.png"> 
 </picture>
 
 ```csharp
@@ -1549,7 +1549,7 @@ namespace ConsoleApp1
 ---
 № 43. Ввести атмосферное давление. Если давление ниже 740 мм рт. ст., вывести «Пониженное давление».
 
-<picture> <img src="3.5/3.png"> 
+<picture> <img src="скрины 3.1/43.png"> 
 </picture>
 
 ```csharp
@@ -1585,7 +1585,7 @@ namespace ConsoleApp1
 ---
 № 44. Ввести количество забитых мячей командами А и Б. Вывести победителя или сообщить о ничьей.
 
-<picture> <img src="3.5/4.png"> 
+<picture> <img src="скрины 3.1/44.png"> 
 </picture>
 
 ```csharp
@@ -1628,7 +1628,7 @@ namespace ConsoleApp1
 ---
 № 45. Дано число. Заменить его на абсолютную величину (модуль) без использования Math.Abs.
 
-<picture> <img src="3.5/5.png"> 
+<picture> <img src="скрины 3.1/45.png"> 
 </picture>
 
 ```csharp
@@ -1657,7 +1657,7 @@ namespace ConsoleApp1
 ---
 № 46. Ввести показатель уровня сахара в крови. Если показатель выше 6.1 ммоль/л, вывести «Выше нормы».
 
-<picture> <img src="3.5/6.png"> 
+<picture> <img src="скрины 3.1/46.png"> 
 </picture>
 
 ```csharp
@@ -1692,7 +1692,7 @@ namespace ConsoleApp1
 ---
 № 47. Проверить, хватит ли пользователю средств на счете для оплаты проезда стоимостью 35 рублей.
 
-<picture> <img src="3.5/7.png"> 
+<picture> <img src="скрины 3.1/47.png"> 
 </picture>
 
 ```csharp
@@ -1727,7 +1727,7 @@ namespace ConsoleApp1
 ---
 № 48. Ввести номер текущего этажа. Если этаж выше 10, вывести «Высотный этаж».
 
-<picture> <img src="3.5/8.png"> 
+<picture> <img src="скрины 3.1/48.png"> 
 </picture>
 
 ```csharp
@@ -1757,7 +1757,7 @@ namespace ConsoleApp1
 ---
 № 49. Ввести два слова. Проверить, одинаковы ли они по длине.
 
-<picture> <img src="3.5/9.png"> 
+<picture> <img src="скрины 3.1/49.png"> 
 </picture>
 
 ```csharp
@@ -1801,7 +1801,7 @@ namespace ConsoleApp1
 ---
 № 50. Пользователь вводит целое число. Вывести строковое сообщение: «Число четное» либо «Число нечетное».
 
-<picture> <img src="3.5/10.png"> 
+<picture> <img src="скрины 3.1/50.png"> 
 </picture>
 
 ```csharp
