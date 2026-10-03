@@ -814,7 +814,7 @@ namespace ConsoleApp1
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 69. Ввести число и определить, сколькизначным оно является (однозначное, двузначное, трехзначное или более).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -832,13 +832,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if (number >=0 && number <=9)
+            {
+                Console.WriteLine("Число однозначное");
+            }
+
+            else if (number >= 10 && number <= 99)
+            {
+                Console.WriteLine("Число двузначное");
+            }
+
+            else if (number >= 100 && number <= 999)
+            {
+                Console.WriteLine("Число Трехзначное");
+            }
+
+            else
+            {
+                Console.WriteLine("другое");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 70. Ввести дальность поездки на такси (км). Рассчитать тариф: до 5 км — 200 руб, от 5 до 15 км — 200 + 25 руб/км, свыше 15 км — 200 + 20 руб/км.
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -856,13 +877,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Ввести дальность поездки на такси: ");
+            int km = int.Parse(Console.ReadLine());
+
+            if (km <= 5)
+            {
+                Console.WriteLine("Сумма поездки: 200 рублей");
+            }
+
+            else if (km >= 5 && km <=15)
+            {
+                Console.WriteLine($"Сумма поездки: {200 + (km - 5) * 25} рублей");
+            }
+
+            else if (km > 15)
+            {
+                Console.WriteLine($"Сумма поездки: {200 + (15 - 5) * 25 + (km - 15) * 20} рублей");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 71. Ввести количество осадков за сутки (мм). Определить: без осадков (0), слабый дождь (0.1-4), умеренный (4.1-15), сильный ливень ( > 15 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -880,7 +917,28 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите количество осадков за сутки: ");
+            decimal mm = decimal.Parse(Console.ReadLine());
+
+            if (mm == 0)
+            {
+                Console.WriteLine("Без осадков");
+            }
+
+            else if (mm >= 0.1m && mm <=4)
+            {
+                Console.WriteLine("Слабый дождь");
+            }
+
+            else if (mm >= 4.1m && mm <= 15)
+            {
+                Console.WriteLine("Умеренный");
+            }
+
+            else if (mm > 15)
+            {
+                Console.WriteLine("Сильный Ливень");
+            }
         }
     }
 }
