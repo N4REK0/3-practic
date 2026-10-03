@@ -21,13 +21,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Вычисление результата");
-
-            int x = 17 / 5;
-            int y = 17 % 5;
-
-            Console.WriteLine($"X = {x}");
-            Console.WriteLine($"Y = {y}");
+            int number = int.Parse(Console.ReadLine());
+            if (number > 0) Console.WriteLine("Число положительное");
+            else Console.WriteLine("Число отрицательное");
         }
     }
 }
@@ -51,12 +47,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Вычислите значение res");
+            Console.Write("Введите целое число: ");
 
-            int a = 5;
-            int res = ++a * 2;
-
-            Console.WriteLine($"res = {res}");
+            int number = int.Parse(Console.ReadLine());
+            if (number % 2 == 0 ) Console.WriteLine("Число четное");
+            else Console.WriteLine("Число нечетное");
         }
     }
 }
@@ -83,12 +78,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Значение res: ");
+            Console.Write("Введите первое число: ");
+            int number1 = int.Parse(Console.ReadLine());
 
-            int a = 5;
-            int res = a++ * 2;
+            Console.Write("Введите второе число: ");
+            int number2 = int.Parse(Console.ReadLine());
 
-            Console.Write($"res = {res}");
+            if (number1 > number2)
+            {
+                Console.Write($"наибольшее число: {number1}");
+            }
+
+            else
+            {
+                Console.Write($"наибольшее число: {number2}");
+            }
         }
     }
 }
@@ -113,11 +117,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int c = 7 / 2;
-            decimal p = 7.0m / 2;
+            Console.Write("Введите первое число: ");
+            decimal number1 = decimal.Parse(Console.ReadLine());
 
-            console.writeline($"решение целочисленного делеия: {c}");
-            console.writeline($"решение целочисленного делеия: {p}");
+            Console.Write("Введите второе число: ");
+            decimal number2 = decimal.Parse(Console.ReadLine());
+
+            if (number1 < number2)
+            {
+                Console.WriteLine($"Наименьшее число: {number1}");
+            }
+
+            else
+            {
+                Console.WriteLine($"Наименьшее число: {number2}");
+            }
         }
     }
 }
@@ -142,11 +156,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            console.writeline("вычислите результат: ");
+            Console.Write("Введите число: ");
+            int number1 = int.Parse(Console.ReadLine());
 
-            int q = -15 % 4;
+            if (number1 % 5 == 0)
+            {
+                Console.WriteLine($"Число {number1} делится на 5");
+            }
 
-            console.writeline($"результат: {q}");
+            else
+            {
+                Console.WriteLine($"Число {number1} не делится на 5");
+            }
         }
     }
 }
@@ -171,13 +192,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            console.writeline("вычислите: ");
+            Console.Write("Введите целое число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            int x = 10;
-            x = x++ + ++x;
+            if (number % 10 == 0)
+            {
+                Console.WriteLine($"Число {number} заканчивается нулем");
+            }
 
-            console.writeline($"решение {x}");
-            
+            else
+            {
+                Console.WriteLine($"Число {number} не заканчивается нулем");
+            }
+
         }
     }
 }
@@ -202,10 +229,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int max = int.maxvalue;
-            int res = checked(max + 1);
+            Console.Write("Введите температуру воздуха: ");
+            int t = int.Parse(Console.ReadLine());
 
-            console.writeline($"вывод {res}");
+            if (t < 0)
+            {
+                Console.WriteLine($"Температура воздуха {t}, на улице мороз, наденьте шапку");
+            }
+
+            else
+            {
+                Console.WriteLine($"Температура воздуха {t}, надевать шапку необязательно");
+            }
         }
     }
 }
@@ -230,11 +265,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int max = int.maxvalue;
-            int res = unchecked(max + 1);
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"вывод {res}");
-            
+            if (number > 100)
+            {
+                Console.WriteLine($"Результат: {number -= 20}");
+            }
+
+            else
+            {
+                Console.WriteLine($"Результат: {number += 10}");
+            }
         }
     }
 }
@@ -259,13 +301,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         { 
-            console.writeline("вычислите: ");
+            Console.Write("Введите первое число: ");
+            int number1 = int.Parse(Console.ReadLine());
 
-            double x = 1.0 / 0.0;
-            double y = 0.0 / 0.0;
+            Console.Write("Введите второе число: ");
+            int number2 = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
-            console.writeline($"y = {y}");
+            if (number1 == number2)
+            {
+                Console.WriteLine($"Числа равны");
+            }
+
+            else
+            {
+                Console.WriteLine($"{number1 + number2}");
+            }
         }
     }
 }
@@ -290,12 +340,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int a = 8;
-            int b = 3;
-            int c = a - b * 2 + a / b;
+            Console.Write("Введите свой возраст: ");
+            int age = int.Parse(Console.ReadLine());
 
-            console.writeline($"c = {c}");
-            
+            if (age >= 18)
+            {
+                Console.WriteLine("Доступ разрешен");
+            }
+
+            else
+            {
+                Console.WriteLine("Доступ запрещен");
+            }
         }
     }
 }
@@ -319,11 +375,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool x = 5 > 3;
-            bool y = 5 >= 5;
+            Console.Write("Введите трехзначное число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
-            console.writeline($"y = {y}");
+            if (number >= 100 && number <=999)
+            {
+                Console.WriteLine($"Число {number} является трехзначным");
+            }
+
+            else
+            {
+                Console.WriteLine($"Число {number} не является трехзначным");
+            }
         }
     }
 }
@@ -348,9 +411,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool x = "hello" == "hello";
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"{x}");
+            if (number % 3 == 0)
+            {
+                Console.WriteLine($"Число {number} делится на 3 без остатка");
+            }
+
+            else
+            {
+                Console.WriteLine($"Число {number} не делится на 3 без остатка");
+            }
         }
     }
 }
@@ -375,9 +447,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool x = double.nan == double.nan;
+            Console.Write("Введите координату точки на числовой прямой X: ");
+            int point = int.Parse(Console.ReadLine());
 
-            console.writeline($"{x}");
+            if (point > 0)
+            {
+                Console.WriteLine($"Координата {point} лежит правее нуля");
+            }
+
+            else
+            {
+                Console.WriteLine($"Координата {point} лежит левее нуля");
+            }
         }
     }
 }
@@ -401,12 +482,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            object a = new int[] { 1 };
-            object b = new int[] { 1 };
+            Console.Write("Введите баланс счета: ");
+            int balance = int.Parse(Console.ReadLine());
 
-            bool r = a == b;
+            if (balance > 0)
+            {
+                Console.WriteLine($"На баласе {balance} рублей");
+            }
 
-            console.writeline($"r = {r}");
+            else
+            {
+                Console.WriteLine("Задолженность!");
+            }
         }
     }
 }
@@ -431,10 +518,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-                        bool x = 10 != 10.0;
+            Console.Write("Введите пароль: ");
+            int password = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
-            
+            if (password == 1234)
+            {
+                Console.WriteLine("Вход выполнен");
+            }
+
+            else
+            {
+                Console.WriteLine("Неверный пароль");
+            }
         }
     }
 }
@@ -459,9 +554,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool x = null == null;
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
+            if (number < 0 )
+            {
+                Console.WriteLine($"Число {number} отрицательное");
+            }
+
+            else
+            {
+                Console.WriteLine($"Число {number} положительное");
+            }
         }
     }
 }
@@ -486,9 +590,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool x = (3 < 5) == (10 >= 20);
+            Console.Write("Введите первое число: ");
+            int number1 = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
+            Console.Write("Введите второе число: ");
+            int number2 = int.Parse(Console.ReadLine());
+
+            int res = (Math.Abs(number1 - number2));
+
+            Console.WriteLine($"Разность равна: {res}");
         }
     }
 }
@@ -513,9 +623,20 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool res = 4 <= 4 && 5 > 2;
+            Console.Write("Введите сумму покупки: ");
+            int price = int.Parse(Console.ReadLine());
 
-            console.writeline($"res = {res}");
+            if (price > 1000) 
+            {
+                int priceiskidka = price * 5 / 100;
+                int result = price - priceiskidka;
+                Console.WriteLine($"Сумма покупки превышает 1000 рублей, вам пологается скидка в размере 5%. К оплате: {result}");
+            }
+
+            else
+            {
+                Console.WriteLine($"К оплате {price}");
+            }
         }
     }
 }
@@ -540,11 +661,20 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            char c = 'b';
-            bool res = c > 'a';
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"res = {res}");
-            
+            if (number % 2 == 0)
+            {
+                int numberdelit = number / 2;
+                Console.WriteLine($"Число четное, следовательно делим на 2. Ответ: {numberdelit}");
+            }
+
+            else
+            {
+                int numberumnojit = number * 3;
+                Console.WriteLine($"Число нечетное, следовательно умножаем на 3. Ответ: {numberumnojit}");
+            }
         }
     }
 }
@@ -569,10 +699,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool r = -0.0 > 0.0;
+            Console.Write("Введите скорость движения: ");
+            int speed = int.Parse(Console.ReadLine());
 
-            console.writeline($"r = {r}");
-            
+            if (speed > 90)
+            {
+                Console.WriteLine("Вы превысили скорость, вам выписан штраф");
+            }
+
+            else
+            {
+                Console.WriteLine("Вы ничего не превысили");
+            }
         }
     }
 }
@@ -598,9 +736,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool x = !true || false && true;
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
+            if (number == 0)
+            {
+                Console.WriteLine("Число равно нулю");
+            }
+
+            else
+            {
+                Console.WriteLine("Число не равно нулю");
+            }
         }
     }
 }
@@ -625,11 +772,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            
-            bool x = false && foo();
+            Console.Write("Введите первое число: ");
+            decimal number1 = decimal.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
-            
+            Console.Write("Введите первое число: ");
+            decimal number2 = decimal.Parse(Console.ReadLine());
+
+            if (number1 == number2)
+            {
+                Console.WriteLine($"Числа {number1:F3} и {number2:F3} равны");
+            }
+
+            else
+            {
+                Console.WriteLine($"Числа {number1:F3} и {number2:F3} не равны");
+            }
         }
     }
 }
@@ -653,9 +810,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-           int x = false & foo();
+            Console.Write("Введите первое число: ");
+            int A = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
+            Console.Write("Введите второе число: ");
+            int B = int.Parse(Console.ReadLine());
+
+            if (A % B == 0)
+            {
+                Console.WriteLine($"Число {A} делится на {B} без остатка");
+            }
+
+            else
+            {
+                Console.WriteLine($"Число {A} делится на {B} с остатком");
+            }
         }
     }
 }
@@ -680,9 +849,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool x = true ^ false ^ true;
+            Console.Write("Введите величину первого угла: ");
+            int corner1 = int.Parse(Console.ReadLine()); 
 
-            console.writeline($"x = {x}");
+            Console.Write("Введите величину второго угла: ");
+            int corner2 = int.Parse(Console.ReadLine());
+
+            if (corner1 + corner2 >= 180)
+            {
+                Console.WriteLine("Такой треугольник не существует");
+            } 
+
+            else
+            {
+                Console.WriteLine("Такой треугольник существует");
+            }
         }
     }
 }
@@ -707,9 +888,25 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool x = !(5 > 2 || 3 < 1);
+            Console.Write("Введите радиус круга: ");
+            decimal r = decimal.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
+            Console.Write("Введите сторону квадрата: ");
+            decimal side = decimal.Parse(Console.ReadLine());
+
+            const decimal Pi = 3.14m;
+            decimal S1 = Pi  * (r * r);
+            decimal S2 = side * side;
+
+            if (S1 > S2)
+            {
+                Console.WriteLine($"Площадь круга больше {S1}");
+            }
+
+            else
+            {
+                Console.WriteLine($"Площадь квадрата больше {S2}");
+            }
         }
     }
 }
@@ -734,10 +931,31 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool a = true, b = false;
-            bool c = a && !b || b && !a;
+            Console.Write("Введите первое число: ");
+            decimal number1 = decimal.Parse(Console.ReadLine());
 
-            console.writeline($"c = {c}");
+            Console.Write("Введите второе число: ");
+            decimal number2 = decimal.Parse(Console.ReadLine());
+
+            if (number1 == 0 || number2 == 0)
+            {
+                Console.Write("Деление на 0 невозможно");
+            }
+
+            else if (number1 > number2)
+            {
+                Console.Write($"Результат {number1 / number2}");
+            }
+
+            else if (number2 > number1)
+            {
+                Console.Write($"Результат {number2 / number1}");
+            }
+
+            else
+            {
+                Console.Write($"Числа равны");
+            }
         }
     }
 }
@@ -762,11 +980,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int x = 10;
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine()); 
 
-            bool result = true || (x / 0 == 1);
-
-            console.writeline($"res = {result}");
+            if (number % 10 == 7)
+            {
+                Console.Write($"Последняя цифра чила {number} равна 7");
+            }
         }
     }
 }
@@ -791,9 +1011,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-           bool x = false & (10 / 0 == 1);
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine()); 
 
-            console.writeline($"x = {x}");
+            if (number % 2 != 0 && number > 0)
+            {
+                Console.WriteLine($"Число {number} нечетное и положительное ");
+            }
+
+            else
+            {
+                Console.WriteLine("Число четное или отрицательное");
+            }
             
         }
     }
@@ -819,12 +1048,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool a = true, b = false;
-            bool morgan = !(a && b);
-            bool morganequivalent = !a || !b;
+            Console.Write("Введите объем свободного места на диске: ");
+            int freeGB = int.Parse(Console.ReadLine()); 
 
-            console.writeline($"{morgan}, {morganequivalent}");
-            
+            if (freeGB < 5)
+            {
+                Console.WriteLine($"На диске мало места");
+            }
+
+            else
+            {
+                Console.WriteLine($"На диске еще есть место");
+            }
         }
     }
 }
@@ -849,12 +1084,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool a = true, b = false;
-            bool morgan = !(a || b);
-            bool morganequivalent = !a && !b;
+            Console.Write("Оценка: ");
+            int mark = int.Parse(Console.ReadLine());
 
-            console.writeline($"{morgan}, {morganequivalent}");
-            
+            if (mark == 5 || mark == 4)
+            {
+                Console.WriteLine("Молодец");
+            }
+
+            else if (mark == 2 || mark == 3)
+            {
+                Console.WriteLine("Нужно подтянуться");
+            }
+
+            else
+            {
+                Console.WriteLine("таких оценок нет");
+            }
         }
     }
 }
@@ -879,10 +1125,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int res = 5 & 3;
+            Console.Write("Введите символ: ");
+            string symbol1 = (Console.ReadLine());
 
-            console.writeline($"result = {res}");
-            
+            Console.Write("Введите символ: ");
+            string symbol2 = (Console.ReadLine());
+
+            if (symbol1 == symbol2)
+            {
+                Console.WriteLine("Символы совпадают");
+            }
+
+            else
+            {
+                Console.WriteLine("Символы не совпадают");
+            }
         }
     }
 }
@@ -907,10 +1164,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int res = 5 | 3;
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"result = {res}");
-            
+            if (number % 2 == 0 && number % 7 == 0 )
+            {
+                Console.Write("Кратно 14");
+            }
         }
     }
 }
@@ -934,9 +1194,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int res = 5 ^ 3;
+            Console.Write("Введите массу груза: ");
+            decimal tonn = decimal.Parse(Console.ReadLine());
 
-            console.writeline($"result = {res}");
+            if (tonn > 3.5m)
+            {
+                Console.WriteLine("Перегруз!");
+            }
+
+            else
+            {
+                Console.WriteLine("Еще место есть");
+            }
         }
     }
 }
@@ -960,10 +1229,28 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int res = ~0;
+            Console.Write("Введите время: ");
+            int time = int.Parse(Console.ReadLine());
 
-            console.writeline($"result = {res}");
-            
+            if (time > 6 && time <= 12)
+            {
+                Console.WriteLine("Доброе утро");
+            }
+
+            else if (time > 12 && time <= 16)
+            {
+                Console.WriteLine("Добрый день");
+            }
+
+            else if (time > 16 && time < 23)
+            {
+                Console.WriteLine("Добрый Вечер");
+            }
+
+            else
+            {
+                Console.WriteLine("Ошибка");
+            }
         }
     }
 }
@@ -987,10 +1274,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int res = 1 << 4;
+            Console.Write("Введите рост: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"result = {res}");
-            
+            if (number > 200)
+            {
+                Console.WriteLine("Очень высокий");
+            }
+
+            else
+            {
+                Console.WriteLine("Скип задачи");
+            }
         }
     }
 }
@@ -1014,10 +1309,26 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-             int res = 40 >> 2;
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
-             console.writeline($"{res}");
-            
+            int number1 = number / 10;
+            int number2 = number % 10;
+
+            if (number1 > number2)
+            {
+                Console.WriteLine($"Первая цифра числа {number} больше");
+            }
+
+            else if (number2 > number1)
+            {
+                Console.WriteLine($"Вторая цифра числа {number} больше");
+            }
+
+            else
+            {
+                Console.WriteLine("Числа равны");
+            }
         }
     }
 }
@@ -1041,18 +1352,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int n = 10;
-            bool x = (n & 8) != 0;
-            bool y = (n & (1 << 3)) != 0;
-            if (x)
+            Console.Write("Введите цену товара: ");
+            int price = int.Parse(Console.ReadLine());
+
+            if (price == 0)
             {
-                console.writeline("3-й бит установлен");
+                Console.WriteLine("Акция!");
             }
-            else
-            {
-                console.writeline("3-й бит не установлен");
-            }
-            
         }
     }
 }
@@ -1076,9 +1382,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int n = 8;
-            n |= (1 << 2);
-            console.writeline($"n = {n}");
+            Console.Write("Введите двузначное число: ");
+            int number = int.Parse(Console.ReadLine());
+
+            int number1 = number / 10;
+            int number2 = number % 10;
+
+            if (number1 == number2)
+            {
+                Console.WriteLine("число содержит одинаковые цифры");
+            }
+
+            else
+            {
+                Console.WriteLine("не содержит");
+            }
         }
     }
 }
@@ -1102,10 +1420,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int n = 20;
-            n &= ~(1 << n);
-            console.writeline($"n = {n}");
-            
+            Console.Write("Введите уровень громкости: ");
+            int gromkost = int.Parse(Console.ReadLine());
+
+            if (gromkost > 80)
+            {
+                Console.WriteLine("Слишком громко для слуха");
+            }
+
+            else
+            {
+                Console.WriteLine("Нормально");
+            }
         }
     }
 }
@@ -1129,8 +1455,24 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int x = (-16) >> 2;
-            console.writeline($"x = {x}");
+            Console.Write("Введите первое Число: ");
+            int number1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите второе Число: ");
+            int number2 = int.Parse(Console.ReadLine());
+
+            int summ = number1 + number2;
+            int raznost = number1 - number2;
+
+            if (summ % 2 == 0)
+            {
+                Console.WriteLine($"Четная: {summ}");
+            }
+
+            else
+            {
+                Console.WriteLine($"Не четная: {raznost}");
+            }
         }
     }
 }
@@ -1154,10 +1496,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int x = 10;
-            x += 5; // += прибавляет к текущему значению в переменной 5 и сохраняет в ней обновленное значение
+            Console.Write("Введите количество страниц в документе: ");
+            int paper = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
+            if (paper > 100)
+            {
+                Console.WriteLine("Двухсторонняя печать включена");
+            }
         }
     }
 }
@@ -1182,10 +1527,20 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int a = 10;
-            a *= 2 + 3; // то же самое действие что и в предыдущей задаче только с умножением
+            Console.Write("Введите целое число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"a = {a}");
+            int res = (int)Math.Sqrt(number);
+
+            if (res * res == number)
+            {
+                Console.WriteLine($"Введенное целое число {number} является полным квадратом");
+            }
+
+            else 
+            { 
+                Console.WriteLine("Число не является полным квадратом"); 
+            }
         }
     }
 }
@@ -1210,10 +1565,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int x = 12;
-            x >>= 2; // сдвиг битов вправо тоесть если число 12 было 1100 бит мы сдвинули направо и в итоге получили 0011 что значит 3
+            Console.Write("Введите атмосферное давление: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
+            if (number < 740)
+            {
+                Console.WriteLine("Пониженное даление");
+            }
+
+            else
+            {
+                Console.WriteLine("Повышенное даление");
+            }
         }
     }
 }
@@ -1238,11 +1601,26 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int? x = null;
-            int y = 5;
-            x = x ?? y;
+            Console.Write("Введите количество забитых мячей команды A: ");
+            int A = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
+            Console.Write("Введите количество забитых мячей команды B: ");
+            int B = int.Parse(Console.ReadLine());
+
+            if (A > B)
+            {
+                Console.WriteLine($"Команда A выйграла со счетом {A}:{B}");
+            }
+
+            else if (B > A)
+            {
+                Console.WriteLine($"Команда B выйграла со счетом {B}:{A}");
+            }
+
+            else
+            {
+                Console.WriteLine("Ничья");
+            }
         }
     }
 }
@@ -1266,11 +1644,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string str = null;
-            str = str ?? "default";
-            str = str ?? "custom"; // получается, если стоит ?? это означает взять информацию справа если слево пусто 
+            Console.Write("Введите отрийцательное число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"str = {str}");
+            int res = number * -1;
+
+            Console.WriteLine($"Ответ {res}");
         }
     }
 }
@@ -1294,10 +1673,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            byte b = 1;
-            b += 2;
+            Console.Write("Введите показатель уровня сахара в крови: ");
+            decimal number = decimal.Parse(Console.ReadLine());
 
-            console.writeline($"b = {b}");
+            if (number > 6.1m)
+            {
+                Console.WriteLine("Выше нормы");
+            }
+
+            else
+            {
+                Console.WriteLine("Норма");
+            }
         }
     }
 }
@@ -1321,11 +1708,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int a = 5, b = 10, c = 0;
-            c = a = b; // просто присваиваются значение из переменной b (10) в переменную a и c
+            Console.Write("Введите, сколько средств на счете: ");
+            int rub = int.Parse(Console.ReadLine());
 
-            console.writeline($"c = {c}");
-            console.writeline($"a = {a}");
+            if (rub >= 35)
+            {
+                Console.WriteLine("Денег на оплату проезда хватит");
+            }
+
+            else
+            {
+                Console.WriteLine("Денег не хватит");
+            }
         }
     }
 }
@@ -1349,11 +1743,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int mask = 1;
-            mask <<= 3; // сдвиг битов влево на 3
-            mask |= 2; // |= это побитовое или если у нас чило 8 это 1000 бит и 2 это 0010 то получается 1010 что означает 10
+            Console.Write("Введите этаж: ");
+            int etaj = int.Parse(Console.ReadLine());
 
-            console.writeline($"mask = {mask}");
+            if (etaj > 10)
+            {
+                Console.WriteLine("Высокий этаж");
+            }
         }
     }
 }
@@ -1377,10 +1773,27 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int x = 15;
-            x %= 4; // %=  означает деление числа и записать целый остаток обратно в переменную 
+            Console.Write("Введите первое слово: ");
+            string word1 = (Console.ReadLine());
+            int length1 = word1.Length;
 
-            console.writeline($"x = {x}");
+            Console.Write("Введите второе слово: ");
+            string word2 = (Console.ReadLine());
+            int length2 = word2.Length;
+
+            if (length1 > length2)
+            {
+                Console.WriteLine("Первое слово длиннее");
+            }
+
+            else if (length2 > length1)
+            {
+                Console.WriteLine("Второе слово длиннее");
+            }
+            else
+            {
+                Console.WriteLine("Все слова одинаковые по длинне");
+            }
         }
     }
 }
@@ -1404,10 +1817,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int x = 7;
-            x ^= 7;
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
-            console.writeline($"x = {x}");
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("Число четное");
+            }
+
+            else
+            {
+                Console.WriteLine("Число нечетное");
+            }
         }
     }
 }
