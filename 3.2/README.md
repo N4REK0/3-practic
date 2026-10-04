@@ -1137,7 +1137,7 @@ namespace ConsoleApp1
 }
 ```
 ---
-№ 76. 
+№ 76. Ввести сумму покупок за месяц для начисления кешбэка: до 10 000 руб — 1%, до 50 000 руб — 3%, свыше 50 000 руб — 5%. Вывести сумму кешбэка.
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -1155,13 +1155,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите сумму покупок за месяц для начисления кешбэка: ");
+            decimal cb = decimal.Parse(Console.ReadLine());
+
+            if (cb < 10000)
+            {
+                Console.WriteLine($"Кешбек 1%: {cb * 1 / 100}");
+            }
+
+            else if (cb >= 10000 && cb <= 50000)
+            {
+                Console.WriteLine($"Кешбек 3%: {cb * 3 / 100}");
+            }
+
+            else if (cb > 50000)
+            {
+                Console.WriteLine($"Кешбек 5%: {cb * 5 / 100}");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 77. Ввести глубину погружения аквалангиста (метры). Вывести зону: рекреационная ( < 40 ), техническая (40-100), глубоководная ( > 100 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -1179,13 +1195,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите глубину погружения аквалангиста: ");
+            int m = int.Parse(Console.ReadLine());
+
+            if (m < 40)
+            {
+                Console.WriteLine("Рекреационная");
+            }
+
+            else if (m >= 40 && m <= 100)
+            {
+                Console.WriteLine("Техническая");
+            }
+
+            else if (m >= 100)
+            {
+                Console.WriteLine("Глубоководная");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 78. Ввести количество штрафных баллов водителя. Вывести: «Предупреждение» (1-5), «Временное ограничение» (6-10), «Лишение прав» ( > 10 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -1203,13 +1235,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите количество штрафных баллов водителя: ");
+            int straf = int.Parse(Console.ReadLine());
+
+            if (straf >= 1 && straf <= 5)
+            {
+                Console.WriteLine("Предупреждение");
+            }
+
+            else if (straf >= 6 && straf <= 10)
+            {
+                Console.WriteLine("Предупреждение");
+            }
+
+            else if (straf > 10)
+            {
+                Console.WriteLine("Предупреждение");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 79. Ввести уровень кислотности почвы (pH). Определить: кислая ( < 6.0 ), нейтральная (6.0-7.2), щелочная ( > 7.2 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -1227,13 +1275,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите уровень кислотности почвы: ");
+            decimal pH= decimal.Parse(Console.ReadLine());
+
+            if (pH < 6.0m)
+            {
+                Console.WriteLine("Кислая");
+            }
+
+            else if (pH >= 6.0m && pH <= 7.2m)
+            {
+                Console.WriteLine("Нейтральная");
+            }
+
+            else if (pH > 7.2m)
+            {
+                Console.WriteLine("Щелочная");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 80. Ввести количество набранных очков в компьютерной игре. Присвоить медаль: Бронзовая (1000-2499), Серебряная (2500-4999), Золотая (5000+), иначе без медали.
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -1251,7 +1315,28 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите количество набранных очков в компьютерной игре: ");
+            int point = int.Parse(Console.ReadLine());
+
+            if (point >= 1000 && point <= 2499)
+            {
+                Console.WriteLine("Бронзовая медаль");
+            }
+
+            else if (point >= 2500 && point <= 4999)
+            {
+                Console.WriteLine("Серебрянная медаль");
+            }
+
+            else if (point >= 5000)
+            {
+                Console.WriteLine("Золотая медаль");
+            }
+
+            else
+            {
+                Console.WriteLine("Без медали");
+            }
         }
     }
 }
