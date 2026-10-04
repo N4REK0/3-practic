@@ -1342,3 +1342,817 @@ namespace ConsoleApp1
 }
 ```
 ---
+№ 81. Ввести крепость напитка в градусах. Классифицировать: безалкогольный (0), слабоалкогольный (0.1-8), среднеалкогольный (8.1-25), крепкий ( > 25 ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                     Console.Write("Введите крепость напитка в градусах: ");
+            decimal gradus = decimal.Parse(Console.ReadLine());
+
+            if (gradus == 0)
+            {
+                Console.WriteLine("Безалкогольный");
+            }
+
+            else if (gradus >= 0.1m && gradus <= 8)
+            {
+                Console.WriteLine("Слабоалкогольный");
+            }
+
+            else if (gradus >= 8.1m && gradus <= 25)
+            {
+                Console.WriteLine("Среднеалкогольным");
+            }
+
+            else if (gradus > 25)
+            {
+                Console.WriteLine("Крепкий");
+            }
+        }
+    }
+}
+```
+---
+№ 82. Ввести показатель уровня шума в децибелах (дБ). Вывести вердикт: тихо ( < 40 ), норма (40-60), шумно (61-80), вредно для здоровья ( > 80 ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите показатель уровня шума в децибелах: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if (number < 40)
+            {
+                Console.WriteLine("Тихо");
+            }
+
+            else if (number >= 40 && number <=60)
+            {
+                Console.WriteLine("Норма");
+            }
+
+            else if (number >= 61 && number <= 80)
+            {
+                Console.WriteLine("Шумно");
+            }
+            else if (number > 80)
+            {
+                Console.WriteLine("Вредно для здоровья");
+            }
+        }
+    }
+}
+```
+---
+№ 83. Ввести вес почтовой посылки (кг). Рассчитать категорию отправления: мелкий пакет ( < 2 ), стандартная (2-10), тяжеловесная (10.1-31.5), крупногабарит ( > 31.5 ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("вес почтовой посылки: ");
+            decimal kg = decimal.Parse(Console.ReadLine());
+
+            if (kg < 2)
+            {
+                Console.WriteLine("Мелкий пакет");
+            }
+
+            else if (kg >= 2 && kg <= 10)
+            {
+                Console.WriteLine("Стандартная");
+            }
+
+            else if (kg >= 10.1m && kg <= 31.5m)
+            {
+                Console.WriteLine("Тяжеловесная");
+            }
+
+            else if (kg > 31.5m)
+            {
+                Console.WriteLine("Крупногабарит");
+            }
+        }
+    }
+}
+```
+---
+№ 84. Ввести количество комнат в квартире. Вывести: студия/однокомнатная (1), двухкомнатная (2), трехкомнатная (3), многокомнатная (4+).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите количество комнат в квартире: ");
+            int room = int.Parse(Console.ReadLine());
+
+            if (room == 1)
+            {
+                Console.WriteLine("Студия/однокомнатная");
+            }
+
+            else if (room == 2)
+            {
+                Console.WriteLine("Двухкомнатная");
+            }
+
+            else if (room == 3)
+            {
+                Console.WriteLine("Трехкомнатная");
+            }
+
+            else if (room >= 4)
+            {
+                Console.WriteLine("Многокомнатная");
+            }
+        }
+    }
+}
+```
+---
+№ 85. Ввести процент заряда повербанка. Вывести количество светящихся светодиодов на корпусе (1, 2, 3 или 4).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите процент заряда повербанка: ");
+            int zaryad = int.Parse(Console.ReadLine());
+
+            if (zaryad > 0 && zaryad <= 25)
+            {
+                Console.WriteLine("1");
+            }
+
+            else if (zaryad > 25 && zaryad <= 50)
+            {
+                Console.WriteLine("2");
+            }
+
+            else if (zaryad > 50 && zaryad <= 75)
+            {
+                Console.WriteLine("3");
+            }
+
+            else if (zaryad > 75 && zaryad <= 100)
+            {
+                Console.WriteLine("4");
+            }
+        }
+    }
+}
+```
+---
+№ 86. Ввести выслугу лет военнослужащего. Вывести процент пенсионной надбавки.
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите выслугу лет военнослужащего: ");
+            int year = int.Parse(Console.ReadLine());
+
+            if (year > 0 && year < 10)
+            {
+                Console.WriteLine("10%");
+            }
+
+            else if (year >= 10 && year < 15)
+            {
+                Console.WriteLine("20%");
+            }
+
+            else if (year >= 15 && year < 20)
+            {
+                Console.WriteLine("30%");
+            }
+        }
+    }
+}
+```
+---
+№ 87. Ввести время отклика сервера (пинг в мс). Вывести: идеальный ( < 20 ), хороший (20-60), посредственный (61-120), плохой ( > 120 ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите время отклика сервера: ");
+            int ms = int.Parse(Console.ReadLine());
+
+            if (ms < 20)
+            {
+                Console.WriteLine("Идеалный");
+            }
+
+            else if (ms >= 20 && ms <= 60)
+            {
+                Console.WriteLine("Хороший");
+            }
+
+            else if (ms >= 61 && ms <= 120)
+            {
+                Console.WriteLine("Посредственный");
+            }
+
+            else if (ms > 120)
+            {
+                Console.WriteLine("Высокий пинг");
+            }
+        }
+    }
+}
+```
+---
+№ 88. Ввести концентрацию CO2 в помещении (ppm). Вывести вердикт: норма ( < 800 ), душно (800-1200), проветрить немедленно ( > 1200 ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите концентрацию CO2 в помещении: ");
+            int CO2 = int.Parse(Console.ReadLine());
+
+            if (CO2 < 800)
+            {
+                Console.WriteLine("Норма");
+            }
+
+            else if (CO2 >= 800 && CO2 <= 1200)
+            {
+                Console.WriteLine("Душно");
+            }
+
+            else if (CO2 > 1200)
+            {
+                Console.WriteLine("Проветрить немедленно");
+            }
+        }
+    }
+}
+```
+---
+№ 89. Ввести количество пройденных шагов за день. Вывести: гиподинамия ( < 5000 ), норма (5000-9999), активный день (10000-14999), рекорд ( > 15000 ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите количество пройденных шагов за день: ");
+            int step = int.Parse(Console.ReadLine());
+
+            if (step < 5000)
+            {
+                Console.WriteLine("Гиподинамия");
+            }
+
+            else if (step >= 5000 && step <= 9999)
+            {
+                Console.WriteLine("Норма");
+            }
+
+            else if (step >= 10000 && step  <= 14999)
+            {
+                Console.WriteLine("Активный день");
+            }
+
+            else if (step > 15000)
+            {
+                Console.WriteLine("Рекорд");
+            }
+        }
+    }
+}
+```
+---
+№ 90. Ввести диаметр автомобильного колесного диска в дюймах. Определить класс: малолитражки (13-14), компактные авто (15-16), кроссоверы/бизнес (17-19), внедорожники/спорт ( 20 + ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите диаметр автомобильного колесного диска: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if (number >= 13 && number <= 14)
+            {
+                Console.WriteLine("Малолитражки");
+            }
+
+            else if (number >= 15 && number <= 16)
+            {
+                Console.WriteLine("Компактные авто");
+            }
+
+            else if (number >= 17 && number <= 19)
+            {
+                Console.WriteLine("Кроссоверы/бизнес");
+            }
+
+            else if (number > 20)
+            {
+                Console.WriteLine("Внедорожники/спорт");
+            }
+        }
+    }
+}
+```
+---
+№ 91. Ввести значение влажности воздуха (%). Вывести: сухой воздух ( < 30 ), комфорт (30-60), повышенная влажность ( > 60 ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите значение влажности воздуха: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if (number < 30)
+            {
+                Console.WriteLine("Сухой воздух");
+            }
+
+            else if (number >= 30 && number <= 60)
+            {
+                Console.WriteLine("Комфорт");
+            }
+
+            else if (number > 60)
+            {
+                Console.WriteLine("Повышенная влажность");
+            }
+        }
+    }
+}
+```
+---
+№ 92. Даны три числа. Проверить, сколько из них равны между собой (все разные, два равны, все три равны).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите первое число: ");
+            int number1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите второе число: ");
+            int number2 = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите третье число: ");
+            int number3 = int.Parse(Console.ReadLine());
+
+            int score = 0;
+
+            if (number1 == number2)
+            {
+                score++;
+            }
+
+            if (number1 == number3)
+            {
+                score++;
+            }
+
+            if (number2 == number3)
+            {
+                score++;
+            }
+
+
+
+            if (score == 0)
+            {
+                Console.WriteLine("Все разные");
+            }
+
+            if (score == 1)
+            {
+                Console.WriteLine("два равны");
+            }
+
+            if (score == 3)
+            {
+                Console.WriteLine("Все равны");
+            }
+        }
+    }
+}
+```
+---
+№ 93. Ввести номер четверти координатной плоскости (1–4) и вывести диапазоны знаков для координат X и Y .
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите первое число: ");
+            int number = int.Parse(Console.ReadLine());
+
+
+            if (number == 1)
+            {
+                Console.WriteLine("X < 0 ; Y > 0");
+            }
+
+            if (number == 2)
+            {
+                Console.WriteLine("X > 0 ; Y > 0");
+            }
+
+            if (number == 3)
+            {
+                Console.WriteLine("X > 0 ; Y < 0");
+            }
+
+            if (number == 4)
+            {
+                Console.WriteLine("X < 0 ; Y < 0");
+            }
+        }
+    }
+}
+```
+---
+№ 94. Ввести температуру процессора компьютера. Вывести: холодный ( < 45 ), нормальная нагрузка (45-75), троттлинг/перегрев ( > 75 ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите температуру процессора компьютера: ");
+            int t = int.Parse(Console.ReadLine());
+
+            if (t < 45)
+            {
+                Console.WriteLine("Холодный");
+            }
+
+            else if (t >= 45 && t <= 75)
+            {
+                Console.WriteLine("Нормальная нагрузка");
+            }
+
+            else if (t > 75)
+            {
+                Console.WriteLine("Тротлинг/перегрев");
+            }
+        }
+    }
+}
+```
+---
+№ 95. Ввести остаток срока годности продукта в днях. Вывести: «Срочно употребить» ( ≤ 2 ), «Нормально» (3-30), «Длительное хранение» ( > 30 ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                    Console.Write("Введите остаток срока годности продукта в днях: ");
+            int t = int.Parse(Console.ReadLine());
+
+            if (t <= 2)
+            {
+                Console.WriteLine("Срочно употребить");
+            }
+
+            else if (t >= 3 && t <= 30)
+            {
+                Console.WriteLine("Нормально");
+            }
+
+            else if (t >30)
+            {
+                Console.WriteLine("Длительное хранение");
+            }
+        }
+    }
+}
+```
+---
+№ 96. Ввести сумму кредита и срок. Рассчитать процентную ставку в зависимости от срока (до года, до трех лет, свыше трех лет).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        
+        }
+    }
+}
+```
+---
+№ 97. Ввести частоту обновления монитора (Гц). Определить: офис (60-75), базовый игровой (120-144), киберспорт ( 165 + ).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        
+        }
+    }
+}
+```
+---
+№ 98. Ввести расход топлива автомобиля на 100 км пути. Вывести вердикт: экономичный ( < 6 л), средний (6-10 л), прожорливый ( > 10 л).
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        
+        }
+    }
+}
+```
+---
+№ 99. 
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        
+        }
+    }
+}
+```
+---
+№ 100. 
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        
+        }
+    }
+}
+```
+---
+№ 80. 
+
+<picture> <img src="скрины 3.2/51.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        
+        }
+    }
+}
+```
+---
