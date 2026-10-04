@@ -2030,7 +2030,36 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        
+                    Console.Write("Введите сумму кредита: ");
+            decimal credit = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Введите срок кредита: ");
+            decimal year = decimal.Parse(Console.ReadLine());
+
+            decimal procstavka;
+
+            if (year < 1)
+            {
+                procstavka = 10;
+            }
+
+            else if (year >= 1 && year <=3)
+            {
+                procstavka = 15;
+            }
+
+            else
+            {
+                procstavka = 20;
+            }
+
+            decimal procenti = credit * (procstavka / 100) * year;
+            decimal itog = credit + procenti;
+
+            Console.WriteLine($"Сумма кредита: {credit} рублей");
+            Console.WriteLine($"Срок кредита: {year} лет");
+            Console.WriteLine($"Процентная ставка по кредиту: {procstavka}%");
+            Console.WriteLine($"Нужно будет вернуть банку {itog}");
         }
     }
 }
@@ -2054,7 +2083,23 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        
+                    Console.Write("Введите частоту обновления монитора ");
+            int Gz = int.Parse(Console.ReadLine());
+
+            if (Gz >= 60 && Gz <= 75)
+            {
+                Console.WriteLine("Офис");
+            }
+
+            else if (Gz >= 120 && Gz <= 144)
+            {
+                Console.WriteLine("Игровой");
+            }
+
+            else if (Gz >= 165)
+            {
+                Console.WriteLine("Игровой");
+            }
         }
     }
 }
@@ -2078,13 +2123,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        
+                    Console.Write("Введите расход топлива автомобиля на 100 км пути: ");
+            int L = int.Parse(Console.ReadLine());
+
+            if (L < 6)
+            {
+                Console.WriteLine("Экономичный");
+            }
+
+            else if (L >= 6 && L <= 10)
+            {
+                Console.WriteLine("Средний");
+            }
+
+            else if (L > 10)
+            {
+                Console.WriteLine("Прожорливый");
+            }
         }
     }
 }
 ```
 ---
-№ 99. 
+№ 99. Ввести количество страниц книги. Классифицировать: брошюра ( < 48 ), повесть (48-150), роман (151-600), фолиант ( > 600 ).
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -2102,13 +2163,34 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        
+                    Console.Write("Введите количество страниц книги: ");
+            int list = int.Parse(Console.ReadLine());
+
+            if (list < 48)
+            {
+                Console.WriteLine("Брошюра");
+            }
+
+            else if (list >= 48 && list <= 150)
+            {
+                Console.WriteLine("Повесть");
+            }
+
+            else if (list >= 151 && list <= 600)
+            {
+                Console.WriteLine("Повесть");
+            }
+
+            else if (list > 600)
+            {
+                Console.WriteLine("Фолиант");
+            }
         }
     }
 }
 ```
 ---
-№ 100. 
+№ 100. Ввести число и проверить, попадает ли оно в интервалы [ 0 ; 10 ] , [ 20 ; 30 ] или [ 50 ; 100 ] .
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -2126,33 +2208,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-        
+                    Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if ((number >= 0 && number <= 10) || (number >= 20  && number <= 30) || (number >= 50 && number <= 100))
+            {
+                Console.WriteLine("Число попадает в один из интервалов");
+            }
+
+            else
+            {
+                Console.WriteLine("Число не попадает ни в один из интервалов");
+            }
         }
     }
 }
-```
----
-№ 80. 
 
-<picture> <img src="скрины 3.2/51.png"> 
-</picture>
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-        
-        }
-    }
-}
-```
----
