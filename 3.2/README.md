@@ -1043,7 +1043,7 @@ namespace ConsoleApp1
 }
 ```
 ---
-№ 74. 
+№ 74. Дано число X . Вычислить значение кусочно-заданной функции: f ( x ) = x 2 , если x > 0 ; f ( x ) = 0 , если x = 0 ; f ( x ) = − x , если x < 0 .
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -1061,13 +1061,33 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите число: ");
+            int X = int.Parse(Console.ReadLine());
+
+            int f;
+
+            if (X > 0)
+            {
+                f = X * X;
+            }
+
+            else if (X == 0)
+            {
+                f = 0;
+            }
+
+            else 
+            {
+                f = -X;
+            }
+
+            Console.WriteLine($"f(x) = {f}");
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 75. Ввести октановое число бензина. Классифицировать: < 92 — несоответствие стандарту, 92 — АИ-92, 95 — АИ-95, 98-100 — АИ-98/100, > 100 — спорт/авиатопливо.
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
@@ -1085,13 +1105,39 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-         
+                     Console.Write("Введите октановое число бензина: ");
+            int okt = int.Parse(Console.ReadLine());
+
+            if (okt < 92)
+            {
+                Console.WriteLine("Несоответствие стандарту");
+            }
+
+            else if (okt == 92)
+            {
+                Console.WriteLine("АИ-92");
+            }
+
+            else if (okt == 95)
+            {
+                Console.WriteLine("АИ-95");
+            }
+
+            else if (okt == 98 && okt == 100)
+            {
+                Console.WriteLine("АИ-98/100");
+            }
+
+            else if (okt > 100)
+            {
+                Console.WriteLine("Спорт/Авиатопливо");
+            }
         }
     }
 }
 ```
 ---
-№ 1. Пользователь вводит целое число. Проверить, является ли оно положительным.
+№ 76. 
 
 <picture> <img src="скрины 3.2/51.png"> 
 </picture>
