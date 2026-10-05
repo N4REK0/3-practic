@@ -345,9 +345,9 @@ namespace ConsoleApp1
 }
 ```
 ---
-№ 101. 
+№ 111. Даны три стороны. Проверить, является ли треугольник равнобедренным.
 
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/111.png"> 
 </picture>
 
 ```csharp
@@ -363,15 +363,32 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите первую сторону треугольника (A): ");
+            int A = int.Parse(Console.ReadLine());
 
+            Console.Write("Введите вторую сторону треугольника (B): ");
+            int B = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите основание треугольника (C): ");
+            int C = int.Parse(Console.ReadLine());
+
+            if (A == B)
+            {
+                Console.WriteLine("Треугольник равнобедренный");
+            }
+
+            else
+            {
+                Console.WriteLine("Треугольник не равнобедренный");
+            }
         }
     }
 }
 ```
 ---
-№ 101. 
+№ 112. Ввести возраст и стаж вождения. Разрешить аренду каршеринга бизнес-класса, если возраст ≥ 23 лет И стаж ≥ 3 лет.
 
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/112.png"> 
 </picture>
 
 ```csharp
@@ -387,15 +404,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите возраст автомобилиста: ");
+            int age = int.Parse(Console.ReadLine());
 
+            Console.Write("Введите стаж вождения: ");
+            int exp = int.Parse(Console.ReadLine());
+
+            if (age >= 23 && exp >= 3)
+            {
+                Console.WriteLine("Вам одобрена аренда каршеринга бизнес-класса");
+            }
+
+            else
+            {
+                Console.WriteLine("Вам не одобрена аренда каршеринга бизнес-класса");
+            }
         }
     }
 }
 ```
 ---
-№ 101. 
+№ 113. Проверить, делится ли число одновременно на 3 и на 5 без остатка.
 
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/113.png"> 
 </picture>
 
 ```csharp
@@ -411,15 +442,26 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
+            if (number % 3 == 0 && number % 5 == 0)
+            {
+                Console.WriteLine("Делится");
+            }
+
+            else
+            {
+                Console.WriteLine("Не елится");
+            }
         }
     }
 }
 ```
 ---
-№ 101. 
+№ 114. Проверить, является ли число трехзначным и оканчивается ли оно на цифру 5.
 
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/114.png"> 
 </picture>
 
 ```csharp
@@ -435,15 +477,26 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
+            if (number >= 100 && number <= 999 && number % 5 == 0 && number % 10 != 0 )
+            {
+                Console.WriteLine("Число является трехзначным и оканчивается на цифру 5");
+            }
+
+            else
+            {
+                Console.WriteLine("Число не является трехзначным или не оканчивается на цифру 5");
+            }
         }
     }
 }
 ```
 ---
-№ 101. 
+№ 115. Даны три числа. Проверить, упорядочены ли они строго по возрастанию ( A < B < C ).
 
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/115.png"> 
 </picture>
 
 ```csharp
@@ -459,7 +512,39 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите первое число: ");
+            int number1 = int.Parse(Console.ReadLine());
 
+            Console.Write("Введите второе число: ");
+            int number2 = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите третье число: ");
+            int number3 = int.Parse(Console.ReadLine());
+
+            int temp;
+
+            if (number1 > number2)
+            {
+                temp = number1;
+                number1 = number2;
+                number2 = temp;
+            }
+
+            if (number1 > number3)
+            {
+                temp = number1;
+                number1 = number3;
+                number3 = temp;
+            }
+
+            if (number2 > number3)
+            {
+                temp = number2;
+                number2 = number3;
+                number3 = temp;
+            }
+
+            Console.WriteLine($"{number1} {number2} {number3}");
         }
     }
 }
