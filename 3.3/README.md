@@ -21,7 +21,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите целое число: ");
+            int number = int.Parse(Console.ReadLine());
 
+            if (number >= 10 && number <= 50)
+            {
+                Console.WriteLine("Число принадлежит отрезку [10; 50]");
+            }
+            else
+            {
+                Console.WriteLine("Число не принадлежит отрезку [10; 50]");
+            }
         }
     }
 }
@@ -45,7 +55,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите целое число: ");
+            int number = int.Parse(Console.ReadLine());
 
+            if (number > 0 && number % 2 == 0)
+            {
+                Console.WriteLine("Введенное целое число является положительным и четным одновременно");
+            }
+
+            else
+            {
+                Console.WriteLine("Введенное целое число не является положительным и четным одновременно");
+            }
         }
     }
 }
@@ -69,7 +90,18 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.Write("Введите число: ");
+            int number = int.Parse(Console.ReadLine());
 
+            if (number >= -10 && number <= 10)
+            {
+                Console.WriteLine("Число лежит в диапазоне [ -10 ; 10 ]");
+            }
+
+            else
+            {
+                Console.WriteLine("Число не лежит в диапазоне [ -10 ; 10 ]");
+            }
         }
     }
 }
