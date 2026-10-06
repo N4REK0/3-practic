@@ -550,9 +550,321 @@ namespace ConsoleApp1
 }
 ```
 ---
-№ 101. 
+№ 116. Проверить, верно ли, что среди трех введенных чисел есть хотя бы одно четное.
 
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/116.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите первое число: ");
+            int number1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите второе число: ");
+            int number2 = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите третье число: ");
+            int number3 = int.Parse(Console.ReadLine());
+
+            if (number1 % 2 == 0 || number2 % 2 == 0 || number3 % 2 == 0)
+            {
+                Console.WriteLine("Cреди трех введенных чисел есть хотя бы одно четное");
+            }
+
+            else
+            {
+                Console.WriteLine("Cреди трех введенных чисел нет четных чисел");
+            }
+        }
+    }
+}
+```
+---
+№ 117. Проверить, верно ли, что среди трех чисел ровно одно равно нулю.
+
+<picture> <img src="скрины 3.3/117.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите первое число: ");
+            int number1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите второе число: ");
+            int number2 = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите третье число: ");
+            int number3 = int.Parse(Console.ReadLine());
+
+            int zero = 0;
+
+            if (number1 == 0)
+            {
+                zero++;
+            }
+
+            if (number2 == 0)
+            {
+                zero++;
+            }
+
+            if (number3 == 0)
+            {
+                zero++;
+            }
+
+            if (zero == 1)
+            {
+                Console.WriteLine("Cреди трех чисел ровно одно равно нулю");
+            }
+
+            else
+            {
+                Console.WriteLine("Cреди трех чисел либо нулей нет, либо их больше чем один");
+            }
+        }
+    }
+}
+```
+---
+№ 118. Ввести температуру и влажность. Вывести предупреждение о гололедице, если температура ≤ 0 ∘C И влажность > 85 .
+
+<picture> <img src="скрины 3.3/118.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите температуру: ");
+            int t = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите влажность: ");
+            int vlajnost = int.Parse(Console.ReadLine());
+
+            if (t <= 0 && vlajnost > 85)
+            {
+                Console.WriteLine("Осторожно! Гололедица");
+            }
+
+            else
+            {
+                Console.WriteLine("");
+            }
+        }
+    }
+}
+```
+---
+№ 119. Даны координаты точки ( X , Y ) . Проверить, лежит ли точка внутри круга радиуса R с центром в начале координат ( x 2 + y 2 ≤ R 2 ).
+
+<picture> <img src="скрины 3.3/119.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите значение X: ");
+            int X = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите значение Y: ");
+            int Y = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите значение r");
+            int r = int.Parse(Console.ReadLine());
+
+            if (X * X + Y * Y <= r * r)
+            {
+                Console.WriteLine("Точка лежит внутри круга радиуса R");
+            }
+
+            else
+            {
+                Console.WriteLine("Точка не лежит внутри круга");
+            }
+        }
+    }
+}
+```
+---
+№ 120. Даны координаты точки ( X , Y ) . Проверить, лежит ли точка внутри прямоугольника со сторонами, параллельными осям, заданного углами ( X 1 , Y 1 ) и ( X 2 , Y 2 ) .
+
+<picture> <img src="скрины 3.3/120.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите значение x: ");
+            decimal x = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Введите значение y: ");
+            decimal y = decimal.Parse(Console.ReadLine());
+
+            // Координаты первого угла прямоугольника
+            Console.Write("Введите значение X1: ");
+            decimal X1 = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Введите значение Y1: ");
+            decimal Y1 = decimal.Parse(Console.ReadLine());
+
+            // Координаты второго угла прямоугольника
+            Console.Write("Введите значение X2: ");
+            decimal X2 = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Введите значение Y2: ");
+            decimal Y2 = decimal.Parse(Console.ReadLine());
+
+            // Находим границы прямоугольника 
+            decimal minX = Math.Min(X1, X2);
+            decimal maxX = Math.Max(X1, X2);
+
+            decimal minY = Math.Min(Y1, Y2);
+            decimal maxY = Math.Max(Y1, Y2);
+
+
+            // Проверяем, находится ли точка внутри
+            if (x >= minX && x <= maxX && y >= minY && y <= maxY)
+            {
+                Console.WriteLine("Лежит");
+            }
+
+            else
+            {
+                Console.WriteLine("Не лежит");
+            }
+        }
+    }
+}
+```
+---
+№ 121. 
+
+<picture> <img src="скрины 3.3/121.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите день рождения: ");
+            int den = int.Parse(Console.ReadLine());
+
+            Console.Write("Введите месяц рождения: ");
+            int mes = int.Parse(Console.ReadLine());
+
+            if (den >= 1 && den <= 31 && mes >= 1 && mes <= 12)
+            {
+                Console.WriteLine("Корректно");
+            }
+
+            else
+            {
+                Console.WriteLine("Некорректно");
+            }
+        }
+    }
+}
+```
+---
+№ 122. 
+
+<picture> <img src="скрины 3.3/122.png"> 
+</picture>
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите месяц: ");
+            int mes = int.Parse(Console.ReadLine());
+
+            if (mes == 12 || mes == 1 || mes == 2)
+            {
+                Console.WriteLine("Месяц отсносится к зимнему периоду");
+            }
+
+            else
+            {
+                Console.WriteLine("Не относится");
+            }
+        }
+    }
+}
+```
+---
+№ 123. 
+
+<picture> <img src="скрины 3.3/123.png"> 
 </picture>
 
 ```csharp
@@ -576,7 +888,7 @@ namespace ConsoleApp1
 ---
 № 101. 
 
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/124.png"> 
 </picture>
 
 ```csharp
@@ -600,7 +912,7 @@ namespace ConsoleApp1
 ---
 № 101. 
 
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/125.png"> 
 </picture>
 
 ```csharp
@@ -624,7 +936,7 @@ namespace ConsoleApp1
 ---
 № 101. 
 
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/126.png"> 
 </picture>
 
 ```csharp
@@ -648,175 +960,7 @@ namespace ConsoleApp1
 ---
 № 101. 
 
-<picture> <img src="скрины 3.3/101.png"> 
-</picture>
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-    }
-}
-```
----
-№ 101. 
-
-<picture> <img src="скрины 3.3/101.png"> 
-</picture>
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-    }
-}
-```
----
-№ 101. 
-
-<picture> <img src="скрины 3.3/101.png"> 
-</picture>
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-    }
-}
-```
----
-№ 101. 
-
-<picture> <img src="скрины 3.3/101.png"> 
-</picture>
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-    }
-}
-```
----
-№ 101. 
-
-<picture> <img src="скрины 3.3/101.png"> 
-</picture>
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-    }
-}
-```
----
-№ 101. 
-
-<picture> <img src="скрины 3.3/101.png"> 
-</picture>
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-    }
-}
-```
----
-№ 101. 
-
-<picture> <img src="скрины 3.3/101.png"> 
-</picture>
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApp1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-
-        }
-    }
-}
-```
----
-№ 101. 
-
-<picture> <img src="скрины 3.3/101.png"> 
+<picture> <img src="скрины 3.3/127.png"> 
 </picture>
 
 ```csharp
